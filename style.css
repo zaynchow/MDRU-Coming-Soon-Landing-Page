@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+    
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: 0;
+   font-family: 'Montserrat' !important;
+   font-size: 22px;
+}
+
+html {
+   font-size: 16px;
+   background-color: #000;
+
+}
+
+#main-header,#mobile-menu-wrap,.top-level-nav-wrap-placeholder,#page-header,.pre-footer-wrap,.footer-wrap{
+   display: none;
+}
+   
+.top-level-nav-wrap-placeholder,.second-level-nav-wrap-placeholder{
+       display: none;
+}
+   
+.main-content{
+       border:none;
+       padding: 0 !important;
+}
+.main{
+       background-color: none
+}
+.main-content::after{
+       content: none;
+       
+}
+
+
+h1{
+    font-family: 'Montserrat' !important;
+   
+}
+
+
+:root {
+
+   --font-lg: clamp(2.2rem, 1rem + 2.8vw , 5.2rem);
+   --font-s: clamp(0.5rem, 0.5rem + 1.2vw , 1.4rem);
+       --social-logo-width: clamp(1.3rem, 1.3rem + 0.8vw , 2rem);
+   --vh: 100%;
+}
+
+body,html {
+    height: 100%;
+height: var( --vh);
+}
+
+
+
+
+a{
+   text-decoration: none;
+}
+
+#left-half {
+   display: none;
+   height: 100vh;
+} 
+ 
+#right-half {
+    height: 100%;
+    height: var( --vh);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url(https://www.mdru.ubc.ca/wp-content/uploads/2022/09/img1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    object-fit: cover;
+}
+   
+.logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 6vh;
+  
+}
+
+.vl {
+   border-right: 1px  solid rgb(187, 187, 187);
+   height: 70px;
+}
+
+.logo img:nth-of-type(1){
+   width:clamp(5rem,5rem + 9.2vw , 20rem);
+   margin-right: 20px;
+
+}
+
+
+.logo img:nth-of-type(2) {
+   display: none;
+}
+
+.logo img:nth-of-type(3){
+   display: none;
+}
+
+
+.logo img:nth-of-type(4){
+   width:clamp(1rem, 1rem + 2.5vw , 20rem);
+   margin-left: 20px;
+}
+
+.right-wrapper {
+   width: 80%;
+}
+
+.right-wrapper h1 {
+   font-weight: 700;
+   font-size: var(--font-lg);
+   margin-bottom: 20px;
+ 
+ 
+}
+
+.right-wrapper p {
+   font-size: var(--font-s);
+   margin-bottom: 1vh;
+}
+
+.right-wrapper a {
+   display: block;
+   color: #fff;
+   font-size: var(--font-s);
+   background-color: #122742;
+   padding: 10px 25px;  
+   width: 80%;
+
+}
+
+
+
+
+ 
+.social-wrapper {
+   position: absolute;
+   bottom: 0.5vh;
+}
+
+
+.social-wrapper svg{
+   width: var(--social-logo-width);
+   height: var(--social-logo-width);
+   margin-left: 5px;
+
+}
+
+@media screen, (min-width: 361px) {
+   .right-wrapper a {
+       display: inline-block;
+               margin-top: 12px;
+       background-color: #0055B7;
+   }
+   
+   .right-wrapper h1 {
+
+       font-size: clamp(1.5rem,1.5rem + 3.8vw,3rem);
+   }
+
+   
+}
+
+
+
+@media (min-width: 560px) {
+    :root {
+       --font-lg: clamp(4rem, 1rem + 3.8vw , 5.2rem);
+       --font-s: clamp(0.4rem, 0.4rem + 1.1vw , 1.4rem);
+   
+   }
+
+   .right-wrapper h1 {
+       line-height: 150%;
+   }
+
+   .logo img:nth-of-type(1){
+       width:clamp(5rem, 9rem + 4vw , 20rem);
+   }
+
+
+   .logo img:nth-of-type(4){
+   width:clamp(1rem, 1rem + 3.5vw , 20rem);
+
+   }
+
+   .right-wrapper h1 {
+       margin-bottom: 10px;
+   }
+   .right-wrapper a:nth-of-type(1) {
+       display: initial;
+       margin:0;
+   }
+   .right-wrapper a:nth-of-type(2) {
+       display: initial;
+       margin:0;
+   }
+   .right-wrapper a:nth-of-type(3) {
+       display: initial;
+       margin:0;
+ 
+   }
+   .right-wrapper a:not(:last-child) {
+   margin-right: 20px;
+   }
+   .right-wrapper p {
+
+   margin-bottom: 4vh;
+   }
+
+
+}
+
+
+@media (min-width: 992px) {
+   :root {
+ 
+       --font-lg: clamp(0.8rem, 0.8rem + 2.3vw ,3.32rem);
+       --font-s: clamp(0.3rem, 0.1rem + 1.1vw , 1.4rem);
+
+   }
+   main {
+       display: flex;
+       padding: 0;
+       margin: 0;
+       background-color:#122742;
+       height: 100vh;
+   }
+   
+   
+   
+   
+   #left-half {
+       display: inline-block;
+       position: relative;
+       width: 45vw;
+       background-color: #000;  
+       border: 10px solid #122742;
+   
+   
+   
+   } 
+   
+   .slider img{
+       opacity: 0.6;
+       transform: scale(1.2);
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       
+   }
+   
+   .slider {
+       height: 100%;
+       overflow: hidden;
+       position: relative;
+    
+   }
+   
+   .buttons {
+       width: 100%;
+       bottom: 20px;
+       position: absolute;
+       text-align: center;
+   }
+   
+   .buttons input{
+       cursor: pointer;
+       margin-right: 5px;
+       appearance: none;
+       height: 0px;
+       width: 50px;
+       background-color: white;
+       border: 1px solid #fff;
+       transition: width 1s, height 1s;
+   }
+   
+   input:checked{
+       width: 80px;
+       height: 5px;
+       background-color: white;
+   
+   }
+   
+   
+   
+   
+   #right-half {
+       color: #000;
+       background-image: none;
+       width: 55vw;
+       background-color: #dfdfdf;
+   }
+   
+   
+   .right-wrapper {
+       max-width: 70%;
+   
+    
+   }
+   
+   
+   .right-wrapper h1 {
+       
+       color: black;
+       font-weight: 500;
+       font-size: var(--font-lg);
+       
+   
+   
+   }
+   
+   
+   .right-wrapper p {
+       font-style: normal;
+       font-weight: 300;
+       font-size: var(--font-s);
+   
+       margin-top: 10px;
+      
+       margin-bottom: 7vh;
+   
+   }
+
+   
+   .logo img:nth-of-type(1){
+       padding-right: 20px;
+       padding-left: 20px;
+   
+   }
+   
+   
+   .vl{
+       height: 100px;
+   }
+
+
+   
+   
+   .right-wrapper a{
+       text-decoration: none;
+       color: #fff;
+       font-size: var(--font-s);
+       background-color: #122742;
+   }
+   
+  
+   .logo img:nth-of-type(1){
+       display: none;
+   }
+
+   .logo img:nth-of-type(2){
+       display: inline-block;
+       width:clamp(5rem, 5rem + 4.7vw , 20rem);
+       margin-right: 15px;
+   }
+
+   .logo img:nth-of-type(3){
+       display: inline-block;
+       width:clamp(5rem, 5rem + 9.5vw , 20rem);
+       margin-left: 7px;
+   }
+
+   .logo img:nth-of-type(4){
+       display: none;
+   }
+
+   
+ 
+   
+  
+   
+}
+
+@media (min-width: 1200px) {
+   :root {
+       --font-lg: clamp(1rem, 1rem + 2.5vw , 6.2rem);
+       --font-s: clamp(0.3rem, 0.1rem + 1vw , 1.4rem);
+   }
+   
+}
